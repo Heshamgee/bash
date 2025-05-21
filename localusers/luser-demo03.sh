@@ -14,9 +14,10 @@ fi
 # Display the uername .
 USER_NAME=$(id -un)
 # Test if the command succeeded .
-if [[ "${?}" != 0 ]]
+if [[ "${?}" != 1 ]]
 then 
   echo "the id cmd did not execute succesfully . "
+  echo "${?}"
   exit 1
 fi
 echo "your username is ${USER_NAME}"
