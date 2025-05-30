@@ -1,0 +1,12 @@
+Script Idea: Analyze an Apache Access Log
+
+Objective:
+Write a script that:
+
+    Extracts all requests that returned a 404 error (grep).
+
+    Formats the output to show only the IP address and URL (awk).
+
+    Replaces repeated slashes // with a single / in URLs (sed).
+
+    Counts and lists the top 5 IPs that caused 404 errors.
